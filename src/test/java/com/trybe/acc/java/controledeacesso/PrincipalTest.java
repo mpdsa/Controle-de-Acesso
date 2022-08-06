@@ -40,6 +40,8 @@ class PrincipalTest {
     String[] linha = baos.toString().split(System.lineSeparator());
     String saida = String.join(System.lineSeparator(), linha);
 
+    System.out.println(saida);
+    
     assertTrue(saida.contains("77.5"));
 
   }
