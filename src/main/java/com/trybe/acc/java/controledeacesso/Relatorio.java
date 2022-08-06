@@ -1,9 +1,7 @@
 package com.trybe.acc.java.controledeacesso;
 
 import java.text.DecimalFormat;
-import java.text.DecimalFormatSymbols;
 import java.util.ArrayList;
-import java.util.Locale;
 
 /** Classe Relatorio. */
 public class Relatorio {
@@ -50,15 +48,15 @@ public class Relatorio {
     String newLine = System.lineSeparator();
 
     StringBuilder frase = stringBuilder
-          .append("----- Quantidade -----" + newLine)
-          .append("menores: " + this.quantCriancas + newLine)
-          .append("adultas: " + this.quantAdultos + newLine)
-          .append("a partir de 50: " + this.quantIdosos + newLine)
-          .append("----- Percentual -----" + newLine)
-          .append("menores: " + decimalF.format(this.porcentcriancas) + "%" + newLine)
-          .append("adultas: " + decimalF.format(this.porcentAdultos) + "%" + newLine)
-          .append("a partir de 50: " + decimalF.format(this.porcentIdosos) + "%" + newLine + newLine)
-          .append("TOTAL: " + this.idadePessoas.size());
+        .append("----- Quantidade -----" + newLine)
+        .append("menores: " + this.quantCriancas + newLine)
+        .append("adultas: " + this.quantAdultos + newLine)
+        .append("a partir de 50: " + this.quantIdosos + newLine)
+        .append("----- Percentual -----" + newLine)
+        .append("menores: " + decimalF.format(this.porcentcriancas) + "%" + newLine)
+        .append("adultas: " + decimalF.format(this.porcentAdultos) + "%" + newLine)
+        .append("a partir de 50: " + decimalF.format(this.porcentIdosos) + "%" + newLine + newLine)
+        .append("TOTAL: " + this.idadePessoas.size());
 
     System.out.print(frase);
 
